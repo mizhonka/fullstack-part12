@@ -1,0 +1,11 @@
+docker exec -it todo-backend-mongo-1 bash
+
+# mongosh
+
+test> use the_database
+switched to db the_database
+the_database> db.todos.insertOne({text: 'Increase the number of tools in my toolbelt', done: false})
+{
+  acknowledged: true,
+  insertedId: ObjectId('66363998be8f195e502202d9')
+}
