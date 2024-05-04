@@ -1,0 +1,7 @@
+Script started on 2024-05-04 07:46:30+00:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="153" LINES="29"]                                 # apt-get -y install curl
+// installing packages
+# curl -sL https://deb.nodesource.com/setup_20.x | bash 
+// installing packages
+# apt install -y nodejs 
+// installing packages
+# node /usr/src/app/index.js                                                                                                         Hello world                                                                                                                          #                                                                                                                                    # exit                                                                                                                                                                                                                                                                    Script done on 2024-05-04 07:48:28+00:00 [COMMAND_EXIT_CODE="0"]
