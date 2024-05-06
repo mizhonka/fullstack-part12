@@ -1,0 +1,20 @@
+docker exec -it todo-backend-redis-1 bash
+redis-cli
+
+127.0.0.1:6379> KEYS *
+1) "added_todos"                                                                                                                                         
+2) "todo_count" 
+
+127.0.0.1:6379> GET todo_count                                                                                                                           
+"1"
+
+127.0.0.1:6379> SET todo_count 9001                                                                                                                      
+OK
+
+// adding new todo
+
+127.0.0.1:6379> GET todo_count                                                                                                                           
+"9002"
+
+127.0.0.1:6379> DEL todo_count                                                                                                                           
+(integer) 1

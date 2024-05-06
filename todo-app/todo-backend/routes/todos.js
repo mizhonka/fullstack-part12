@@ -34,6 +34,8 @@ const findByIdMiddleware = async (req, res, next) => {
 /* DELETE todo. */
 singleRouter.delete('/', async (req, res) => {
   await req.todo.delete()  
+  const result=await getTodoCount()
+  redis.setAsync('todo_count', result-1)
   res.sendStatus(200);
 });
 
