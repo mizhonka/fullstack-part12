@@ -8,5 +8,10 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     setupFiles: './testSetup.js', 
+  },
+  server: {
+    watch: {
+      usePolling: true
+    }
   }
 })
