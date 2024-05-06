@@ -6,6 +6,9 @@ services:
       dockerfile: ./todo-frontend/dev.Dockerfile
     volumes:
       - ./todo-frontend/:/usr/src/app
+    environment:
+      - VITE_BACKEND_URL=http://localhost:8080/api
+
   server:
     image: hello-back-dev
     build:
@@ -19,11 +22,13 @@ services:
     depends_on:
       - redis
       - mongo
+
   redis:
     image: redis
     command: ['redis-server', '--appendonly', 'yes']
     volumes:
       - ./todo-backend/redis_data:/data
+
   mongo:
     image: mongo
     environment:
@@ -33,6 +38,7 @@ services:
     volumes:
       - ./todo-backend/mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
       - ./todo-backend/mongo_data:/data/db 
+
   nginx:
     image: nginx:1.20.1
     volumes:
@@ -42,3 +48,4 @@ services:
     container_name: reverse-proxy
     depends_on:
       - app
+      - server
