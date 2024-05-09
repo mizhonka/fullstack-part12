@@ -1,0 +1,7 @@
+POST http://localhost:3003/api/blogs/660eac44d8809ce60d538022/comments
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1pemhvbmthIiwiaWQiOiI2NWVhYzEwYzY3ZmVmYmFmMzgzNzA1MzYiLCJpYXQiOjE3MTAwODAzNTl9.LDrV4Jb51apy0gZKRn9Egru8eEYR_YsoCZOH1IK-tks
+
+{
+    "content": "haluutko keksin"
+}

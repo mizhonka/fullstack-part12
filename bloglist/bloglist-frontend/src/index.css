@@ -1,0 +1,49 @@
+.success {
+    background-color: #dde3de;
+    margin-top: 0.1em;
+    margin-left: 0.1em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-weight: bold;
+    border-style: solid;
+    color: #1fc206;
+}
+
+.error {
+    background-color: #dde3de;
+    margin-top: 0.1em;
+    margin-left: 0.1em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-weight: bold;
+    border-style: solid;
+    color: #c20606;
+}
+
+.blogStyle {
+    padding-top: 0.2em;
+    padding-left: 0.5em;
+    border: solid;
+    border-width: 0.1em;
+    margin-bottom: 0.5em;
+    margin-top: 0.2em;
+}
+
+.column {
+    float: left;
+    width: 10%;
+    padding: 0.2em;
+}
+
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.react_link {
+    color: #12263a;
+    padding-right: 1em;
+}
